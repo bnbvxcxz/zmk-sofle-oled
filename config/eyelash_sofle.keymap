@@ -22,9 +22,9 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
-    trigger-period-ms = <16>;
+    time-to-max-speed-ms = <250>;
+    acceleration-exponent = <2>;
+    trigger-period-ms = <12>;
 };
 
 &soft_off { hold-time-ms = <2000>; };
@@ -34,7 +34,7 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        tap-ms = <100>;
+        tap-ms = <20>;
     };
 
     behaviors {
