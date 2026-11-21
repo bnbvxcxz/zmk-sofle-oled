@@ -6,7 +6,6 @@
         zmk,physical-layout = &eyeslash_sofle_layout;
         /delete-property/ zmk,matrix-transform;
         /delete-property/ zephyr,display;
-        /delete-property/ zmk,underglow;
         /delete-property/ zmk,backlight;
     };
 
@@ -36,7 +35,6 @@
 };
 
 &oled { status = "disabled"; };
-&led_strip { status = "disabled"; };
+&led_strip { chain-length = <1>; };
 &i2c0 { status = "disabled"; };
-&spi3 { status = "disabled"; };
 &pwm0 { status = "disabled"; };
